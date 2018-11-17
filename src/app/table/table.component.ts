@@ -3,6 +3,7 @@ import { CarService } from './service/car.service';
 import { Car } from './service/car';
 import { SelectItem } from './service/selectItem';
 
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -17,6 +18,8 @@ export class TableComponent implements OnInit {
   constructor(private carService: CarService) { }
 
   ngOnInit() {
+
+    debugger;
       this.carService.getCarsSmall().then(cars => this.cars = cars);
 
       this.brands = [
