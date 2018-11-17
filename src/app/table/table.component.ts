@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CarService } from './service/car.service';
 import { Car } from './service/car';
+import { SelectItem } from './service/selectItem';
 
 @Component({
   selector: 'app-table',
@@ -31,9 +32,4 @@ export class TableComponent implements OnInit {
           {label: 'Volvo', value: 'Volvo'}
       ];
   }
-}
-
-export interface SelectItem {
-  label;
-  value;
 }
