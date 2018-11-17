@@ -9,9 +9,9 @@ export class CarService {
 
 
     getCarsSmall() {
-      return this.http.get<any>('../../../data/cars-small.json')
+      return this.http.get<any>('../../../assets/data/cars-small.json')
         .toPromise()
         .then(res => <Car[]>res.data)
-        .then(data => { return data; });
+        .then(data => data);
     }
 }
